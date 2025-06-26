@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+}
+.input-group input {
+  width: 4rem;
+  margin-right: 0.5rem;
+}
+.buttons button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+#result {
+  font-weight: bold;
+}
