@@ -4,8 +4,8 @@
   "description": "App com dois botões de soma",
   "main": "src/script.js",
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint": "npx eslint .",
+    "lint:fix": "npx eslint . --fix",
     "test": "jest"
   },
   "devDependencies": {
