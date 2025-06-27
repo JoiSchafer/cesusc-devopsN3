@@ -12,11 +12,16 @@ function somar(a, b) {
   return a + b;
 }
 
-document.getElementById("botao-somar").addEventListener("click", () => {
-  const { numeroUm, numeroDois } = obterEntradas();
-  const resultado = somar(numeroUm, numeroDois);
-  exibirResultado(resultado);
-});
+// Só executa no navegador, não durante os testes
+if (typeof document !== "undefined") {
+  document.getElementById("botao-somar").addEventListener("click", () => {
+    const { numeroUm, numeroDois } = obterEntradas();
+    const resultado = somar(numeroUm, numeroDois);
+    exibirResultado(resultado);
+  });
+}
 
-
-
+// Exporta a função para os testes
+if (typeof module !== "undefined" && typeof module.exports !== "undefined") {
+  module.exports = { somar };
+}
